@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/1style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <title>1leht</title>
+</head>
+<body>
+
+<div class="container">
+   <!-- Changing text --> 
+   <div class="changetext" id="changetext">Sõnad ilmuvad siia</div>
+   <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+</div>
+   <div class="material-symbols-outlined">
+   <!-- Buttons -->
+<span id="undo" class="undo" onclick="OffsetIndex(-20)">undo</span> 
+<span id="pause" class="pause" onclick="PlayPause()">pause</span> 
+<span id="play" class="play" onclick="PlayPause()">play_arrow</span>
+    </div>
+   <div class="text-buttons-container">
+   <!-- Wpm buttons -->
+   <div class="buttons">
+    <div class="text-buttons-container">
+   <button id="150wpm" class="button" onclick="ChangeSpeed(150)"> 150wpm </button>
+   </div>
+   <div class="text-buttons-container">
+   <button id="250wpm" class="button" onclick="ChangeSpeed(250)"> 250wpm </button>
+   </div>
+   <div class="text-buttons-container">
+   <button id="350wpm" class="button" onclick="ChangeSpeed(350)"> 350wpm </button>
+   </div>
+   <div class="text-buttons-container">
+   <button id="450wpm" class="button" onclick="ChangeSpeed(450)"> 450wpm </button>
+   </div>
+   </div> 
+</div>
+<script src="js/1script.js"></script>
+</body>
+</html>

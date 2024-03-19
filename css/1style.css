@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto+Slab', sans-serif;
+    background-image: linear-gradient(to bottom right, silver, #e6e6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.changetext {
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+    font-size: 500%;
+    margin-bottom: 20px;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.text-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20%;
+    user-select: none;
+}    
+
+.button {
+    color:black;
+    background-color:white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.button:hover {
+    transform: scale(0.98);
+}
+
+.material-symbols-outlined {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 100%;
+    user-select:none;
+}
+
+.undo {
+    cursor: pointer;
+    font-size: 300%;
+}
+
+.pause {
+    cursor: pointer;
+    font-size: 300%;
+    display:none;
+}
+
+.play {
+    display: contents;
+    cursor: pointer;
+    font-size: 300%;
+}
+
+.progress-bar {
+    border: 3px solid #0461a9;
+    width: 630px;
+    height: 15px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0461a9;
+    width: 0%;
+    transition: width 1s ease;
+}
+
+.button.blue {
+    background-color: #0461a9;
+    color: white;
+  }
+
+/* Tablets */
+@media(max-width: 768px) {
+    .changetext {
+        transform: scale(0.8);
+    }
+    .buttons {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media(max-width: 550px) {
+    .buttons {
+        flex-direction: column;
+        width: 50px;
+        height: 150px;
+    }
+    .button {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .changetext {
+        transform: scale(0.6, 0.7);
+        font-size: 700%;
+        margin-bottom: -3%;
+    }
+    .material-symbols-outlined {
+        margin-bottom: 15%;
+    }
+    .undo {
+        font-size: 250%;
+    }
+    .play {
+        font-size: 250%;
+    }
+    .pause {
+        font-size: 250%;
+    }
+    .text-buttons-container {
+        transform: scale(0.9);
+    }
+}
+
+@media(max-height: 730px) {
+    .changetext {
+        margin-top: 20%;
+    }
+    .buttons {
+        transform: scale(1.1);
+    }
+    .text-buttons-container {
+        margin-bottom: 5px;
+    }
+}
+
+/* Smaller mobile */
+@media(max-width: 400px) {
+    .changetext {
+        transform: scale(0.5, 0.7);
+    }
+}
